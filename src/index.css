@@ -1,13 +1,29 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.login-vh{
+    height: 80vh;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.login-img{
+    width: 30%;
+}
+
+.form-width{
+    width: 40%;
+}
+
+@media only screen and (max-width: 1010px){
+    .login-vh{
+        height: initial;
+    }
+    .form-width{
+        width:100%
+    }
+
+    .login-img{
+        width: 100%;
+    }
 }
